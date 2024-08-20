@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.0/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Drive</h1>
+    
+    <div>
+        <h2>Upload Arquivo</h2>
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload</button>
+    </div>
+    <div>
+        <h2>Arquivos</h2>
+        <button onclick="displayFiles()">Display Files</button>
+        <ul id="fileList"></ul>
+    </div>
+    <div>
+        <h2>Compartilhar Acesso</h2>
+        <input type="text" id="shareAddress" placeholder="Enter address">
+        <button onclick="shareAccess()">Share</button>
+    </div>
+    <div>
+        <h2>Lista de Acesso</h2>
+        <button onclick="displayAccessList()">Display Access List</button>
+        <ul id="accessList"></ul>
+    </div>
+    <script src="ipfs.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
